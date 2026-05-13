@@ -33,5 +33,6 @@ public class GetAPIAutomation {
         sf.assertNotNull(response.jsonPath().getString("totalprice"));
         sf.assertNotNull(response.jsonPath().getString("bookingdates.checkin"));
 
+        sf.assertAll();
     }
 }

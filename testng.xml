@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testng.failscript.TransformMachanisam"/>
+    </listeners>
+<!--    <groups>
+        <run>
+            <include name="smoke"/>
+            <include name="sanity"/>
+        </run>
+    </groups>-->
+    <test verbose="2" preserve-order="true" parallel="false" thread-count="5" name="D:/repo1/clone/2026/Selenium_17_Feb_26">
+        <classes>
+            <class name="testng.failscript.DemoTestCheck"/>
+        </classes>
+    </test>
+</suite>

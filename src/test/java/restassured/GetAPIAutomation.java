@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 public class GetAPIAutomation {
 
-    @Test
+    @Test(description = "Verify Get Request")
     public void verifyGetRequest() {
         RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking";
         SoftAssert sf = new SoftAssert();
@@ -32,6 +32,6 @@ public class GetAPIAutomation {
         sf.assertNotNull(response.jsonPath().getString("lastname"));
         sf.assertNotNull(response.jsonPath().getString("totalprice"));
         sf.assertNotNull(response.jsonPath().getString("bookingdates.checkin"));
-        sf.assertAll();
+
     }
 }

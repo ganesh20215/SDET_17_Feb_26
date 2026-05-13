@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class DeleteAPI {
 
-    @Test
+    @Test(description = "Verify delete API for new User")
     public void verifyDeleteAPI(){
         JSONObject jb1 = new JSONObject();
         jb1.put("username", "admin");

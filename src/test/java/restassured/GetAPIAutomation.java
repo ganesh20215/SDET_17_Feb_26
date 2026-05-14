@@ -35,4 +35,9 @@ public class GetAPIAutomation {
 
         sf.assertAll();
     }
+
+    @Test
+    public void testCheck(){
+        System.out.println("Hello Everyone... How Are You??");
+    }
 }

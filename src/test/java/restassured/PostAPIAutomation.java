@@ -38,4 +38,9 @@ public class PostAPIAutomation {
                         "booking.lastname", Matchers.is("Kale"),
                         "booking.totalprice", Matchers.is(123));
     }
+
+    @Test
+    public void checkTestDemo2(){
+        System.out.println("Hello... Good Mornining");
+    }
 }

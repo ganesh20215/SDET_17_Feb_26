@@ -14,6 +14,7 @@ public class DependsOnGroups {
     @Test(dependsOnGroups = {"smoke"})
     public void verifyNewUserLogin(){
         System.out.println("Verify New User Login");
+        System.out.println("testing");
     }
 
     @Test
